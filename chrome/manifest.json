@@ -1,0 +1,10 @@
+{
+  "name": "I Hate Content Farm",
+  "version": "0.1",
+  "description": "",
+  "manifest_version": 2,
+  "background" : {
+  	"scripts" : ["sites.js","background.js"]
+  },
+  "permissions": [ "tabs"]
+}

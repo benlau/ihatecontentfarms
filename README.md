@@ -1,2 +1,1 @@
-# ihatecontentfarm
-I hate content farm
+# I hate content farm
