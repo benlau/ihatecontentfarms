@@ -6,5 +6,6 @@
   "background" : {
   	"scripts" : ["sites.js","background.js"]
   },
-  "permissions": [ "tabs"]
+  "permissions": [ "tabs"],
+  "default_locale": "zh"
 }
