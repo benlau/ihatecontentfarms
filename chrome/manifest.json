@@ -7,5 +7,5 @@
   	"scripts" : ["sites.js","background.js"]
   },
   "permissions": [ "tabs"],
-  "default_locale": "zh"
+  "default_locale": "zh_TW"
 }
