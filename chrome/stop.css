@@ -15,17 +15,20 @@ body {
     right: 0;
 
     max-width: 500px;
-    height: 320px;
+    display: table;
 }
 
 .content h1 {
     margin-top: 32px;
+    margin-left: 8px;
 }
 
 .content p {
     margin-top: 32px;
     margin-bottom: 64px;
     font-size: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .button {
