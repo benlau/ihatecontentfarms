@@ -1,5 +1,10 @@
-    
 $(document).ready(function() {
+    $("title").text(chrome.i18n.getMessage("title"));
+    $("h1").text(chrome.i18n.getMessage("header"));
+    $("p").text(chrome.i18n.getMessage("body"));
+    $("#back").text(chrome.i18n.getMessage("backBtn"));
+    $("#continue").text(chrome.i18n.getMessage("contBtn"));
+
     $("#continue").click(function() {
         var queryString = window.location.search.substring(1);
         var token = queryString.split("&");
@@ -46,4 +51,3 @@ $(document).ready(function() {
     });
     
 });
-    
