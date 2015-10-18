@@ -1,22 +1,28 @@
-{
-  "title": {
-    "message": "Beware! Content Farm!",
-    "description": "Title for stop page"
-  },
-  "header": {
-    "message": "You're going to visit a content farm",
-    "description": "Header of warning in stop page"
-  },
-  "body": {
-    "message": "Continue? Back if you are annoyed with them.",
-    "description": "Body of warning message"
-  },
-  "backBtn": {
-    "message": "Back",
-    "description": "Back button text"
-  },
-  "contBtn": {
-    "message": "Continue",
-    "description": "Continue button text"
-  }
+{  
+    "appName":{  
+        "message":"I Hate Content Farms"
+    },
+    "appDesc":{  
+        "message":"To prevent click content farms mistakenly"
+    },
+    "title":{  
+        "message":"Beware! Content Farm!",
+        "description":"Title for stop page"
+    },
+    "header":{  
+        "message":"You're going to visit a content farm",
+        "description":"Header of warning in stop page"
+    },
+    "body":{  
+        "message":"Continue? Back if you are annoyed with them.",
+        "description":"Body of warning message"
+    },
+    "backBtn":{  
+        "message":"Back",
+        "description":"Back button text"
+    },
+    "contBtn":{  
+        "message":"Continue",
+        "description":"Continue button text"
+    }
 }

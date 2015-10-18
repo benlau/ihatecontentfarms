@@ -1,22 +1,28 @@
-{
-  "title": {
-    "message": "內容農場注意",
-    "description": "Title for stop page"
-  },
-  "header": {
-    "message": "你正準備打開內容農場",
-    "description": "Header of warning in stop page"
-  },
-  "body": {
-    "message": "要繼續嗎？要是感到討厭，不要繼續比較好呀。",
-    "description": "Body of warning message"
-  },
-  "backBtn": {
-    "message": "退後",
-    "description": "Back button text"
-  },
-  "contBtn": {
-    "message": "繼續",
-    "description": "Continue button text"
-  }
+{  
+    "appName":{  
+        "message":"I Hate Content Farms"
+    },
+    "appDesc":{  
+        "message":"防止不小打開內容農場的文章"
+    },
+    "title":{  
+        "message":"內容農場注意",
+        "description":"Title for stop page"
+    },
+    "header":{  
+        "message":"你正準備打開內容農場",
+        "description":"Header of warning in stop page"
+    },
+    "body":{  
+        "message":"要繼續嗎？要是感到煩厭，放棄也是一種選擇啊。",
+        "description":"Body of warning message"
+    },
+    "backBtn":{  
+        "message":"返回",
+        "description":"Back button text"
+    },
+    "contBtn":{  
+        "message":"繼續",
+        "description":"Continue button text"
+    }
 }
