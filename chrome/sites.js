@@ -4,9 +4,8 @@ var sites = [
 	"www.mama.tw",
 	"www.teepr.com",
 	"onefunnyjoke.com",
-	"www.buzzhand.com",
-	"my.buzzhand.com",
-	"www.buzzhand.net",
+	"buzzhand.com",
+	"buzzhand.net",
 	"www.ptt01.cc",
 	"tw.gigacircle.com",
 	"tw4.gigacircle.com",
@@ -29,11 +28,11 @@ var sites = [
 	"newstube01.tv",
 	"www.bomb01.com",
 	"share001.net",
-	"www.share001.net",
 	"www.cmoney.net",
 	"www.daliulian.net",
 	"hssszn.com",
 	"www.hothk.com",
 	"www.kuso01.tv",
-	"shareba.com"
+	"shareba.com",
+    "discoss.com"
 ];

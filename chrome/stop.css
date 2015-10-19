@@ -51,9 +51,11 @@ a:hover {
 }
 
 #back {
-    float:left;
+    float:right;
+    border-radius: 2px;
+    border: 1px solid #fff;
 }
 
 #continue {
-    float:right;   
+    float:left;   
 }
