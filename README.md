@@ -19,4 +19,4 @@
 
 下載:
 
-[I Hate Content Farms - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/i-hate-content-farms/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
+[I Hate Content Farms - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
