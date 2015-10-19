@@ -17,3 +17,6 @@
  
  2. 用戶可以選擇繼續，然後在10分鐘內不再對同一網址進行攔截
 
+下載:
+
+[I Hate Content Farms - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/i-hate-content-farms/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
