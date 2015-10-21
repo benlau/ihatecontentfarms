@@ -7,7 +7,7 @@ function hostname(url) {
 function inFilter(hostname) {
     for (var i in sites) {
         var site = sites[i];
-        var re = new RegExp("^[a-zA-Z0-9\.]*\\.+" + site + "$|^" + site + "$");
+        var re = new RegExp("\\.?" + site.replace(".","\\.") + "$");
         if (hostname.match(re))
             return true;
     }
