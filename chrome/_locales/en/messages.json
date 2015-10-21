@@ -24,5 +24,17 @@
     "contBtn":{
         "message":"Continue",
         "description":"Continue button text"
+    },
+    "saveBtn":{
+        "message":"Save",
+        "description":"Save button text in option page"
+    },
+    "sitelist":{
+        "message":"Content farm domains",
+        "description":"Option page site list caption"
+    },
+    "saveFailed":{
+        "message":"Cannot save. Local storage quota exceed",
+        "description":"Option page save fail message"
     }
 }

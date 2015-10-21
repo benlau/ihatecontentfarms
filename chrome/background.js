@@ -5,8 +5,13 @@ function hostname(url) {
 }
 
 function inFilter(hostname) {
-    for (var i in sites) {
-        var site = sites[i];
+    try {
+        var userSites = JSON.parse(localStorage.getItem("sites") || "")
+    } catch (e) {
+        var userSites = sites; // Use default
+    };
+    for (var i in userSites) {
+        var site = userSites[i];
         var re = new RegExp("\\.?" + site.replace(".","\\.") + "$");
         if (hostname.match(re))
             return true;

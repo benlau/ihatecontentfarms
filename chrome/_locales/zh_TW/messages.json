@@ -24,5 +24,17 @@
     "contBtn":{
         "message":"繼續",
         "description":"Continue button text"
+    },
+    "saveBtn":{
+        "message":"儲存",
+        "description":"Save button text in option page"
+    },
+    "sitelist":{
+        "message":"內容農場域名",
+        "description":"Option page site list caption"
+    },
+    "saveFailed":{
+        "message":"儲存失敗。應該是儲存空間不足。",
+        "description":"Option page save fail message"
     }
 }
