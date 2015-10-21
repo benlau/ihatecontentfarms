@@ -1,27 +1,27 @@
-{  
-    "appName":{  
+{
+    "appName":{
         "message":"Content Farm Blocker"
     },
-    "appDesc":{  
+    "appDesc":{
         "message":"Prevent clicking content farm by mistake"
     },
-    "title":{  
+    "title":{
         "message":"Beware! Content Farm!",
         "description":"Title for stop page"
     },
-    "header":{  
+    "header":{
         "message":"You're going to visit a content farm",
         "description":"Header of warning in stop page"
     },
-    "body":{  
+    "body":{
         "message":"Continue? Back if you are annoyed with them.",
         "description":"Body of warning message"
     },
-    "backBtn":{  
+    "backBtn":{
         "message":"Back",
         "description":"Back button text"
     },
-    "contBtn":{  
+    "contBtn":{
         "message":"Continue",
         "description":"Continue button text"
     }

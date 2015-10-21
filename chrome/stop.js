@@ -17,28 +17,28 @@ $(document).ready(function() {
             }
         }
 
-        var whiteList 
+        var whiteList
         try {
             whiteList = JSON.parse(localStorage.getItem("whiteList") || "");
         } catch (e) {
             whiteList = {};
         }
-        
+
         whiteList[to] = new Date().getTime();
-        
+
         try {
             localStorage.setItem("whiteList",JSON.stringify(whiteList));
         } catch (err) {
             // e.g. quote exceed. Just purge old data
-            whiteList = {from: true}; 
+            whiteList = {from: true};
             localStorage.setItem("whiteList",JSON.stringify(whiteList));
         }
 
         window.location.href = to;
     });
-    
+
     $("#back").click(function() {
-        
+
         if (history.length <= 2) {
             if (window.opener || window.parent) {
                 window.close();
@@ -49,5 +49,5 @@ $(document).ready(function() {
             window.history.go(-2);
         }
     });
-    
+
 });
