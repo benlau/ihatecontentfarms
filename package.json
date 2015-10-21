@@ -24,8 +24,13 @@
   },
   "homepage": "https://github.com/benlau/ihatecontentfarms",
   "dependencies": {
+    "assert": "^1.3.0",
+    "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
     "del": "^2.0.2",
     "gulp-util": "^3.0.7",
-    "merge": "^1.2.0"
+    "merge": "^1.2.0",
+    "source-map-support": "^0.3.2"
   }
 }

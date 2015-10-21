@@ -5,7 +5,7 @@
 
 即使告訢朋友不要再轉載有關文章，結果還是不會消失，最後只能進行消極的抵抗 － 不點擊，不讓自己為對方的廣告收益帶來貢獻。
 
-可是
+可是 －
 
 有時候會點錯，當網頁打開後才察覺到自己又中了計。
 
@@ -20,3 +20,11 @@
 下載:
 
 [Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
+
+
+Unit Tests
+----------
+
+gulp mocha:build
+mocha --require source-map-support/register build/tests/main.js
+

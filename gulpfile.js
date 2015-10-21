@@ -9,11 +9,24 @@ var gulp = require('gulp'),
 
 var chromeBuildFolder = "./build/chrome";
 
-var chromeWebpackConfig = {
-    output: {
-        path: __dirname + "/" + chromeBuildFolder
+var webpackConfig = {
+    module: {
+        preLoaders: [
+            {test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/},
+        ],
+        
+        loaders: [
+            {test: /\.js$/, loader: "babel-loader", exclude: /node_modules/},
+        ]
     }
 }
+
+var chromeWebpackConfig = _.merge({},
+                                webpackConfig,{
+                                    output: {
+                                        path: __dirname + "/" + chromeBuildFolder
+                                    }
+                                });
 
 function chromeWebpack(filename,callback) {
     var config = {};
@@ -62,5 +75,24 @@ gulp.task("chrome:stop", function(callback) {
     chromeWebpack("stop.js",callback);
 });
 
-
+gulp.task("mocha:build", function(callback) {
+    var config = _.merge({},
+                         webpackConfig, {
+                            output: {
+                                path: __dirname + "/build/tests",
+                                filename: "main.js"
+                            },
+                            entry: "./tests/main.js"        
+                        });
+    
+    webpack(config, function(err,stats) {
+        if(err) throw new gutil.PluginError("webpack", err);
+        
+        gutil.log("[webpack]", stats.toString({
+        }));
+        
+        callback();            
+    });
+    
+});
 
