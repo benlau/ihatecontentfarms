@@ -12,7 +12,7 @@ var sites = [
     "eazon.com",
     "www.juksy.com",
     "www.peopleinsider.net",
-    "peopleinsider.blogspot.com",
+    "peopleinsider.blogspot.*",
     "www.viralane.com",
     "www.metalballs.com",
     "www.zoupy.com",
@@ -34,7 +34,8 @@ var sites = [
     "www.hothk.com",
     "www.kuso01.tv",
     "shareba.com",
-    "discoss.com"
+    "discoss.com",
+    "faminereports.blogspot.*"
 ];
 
 module.exports = sites;
