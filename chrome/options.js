@@ -2,6 +2,7 @@ $(document).ready(function() {
     // i18n of UI
     $("#sitelist p").text(chrome.i18n.getMessage("sitelist"));
     $("#save").text(chrome.i18n.getMessage("saveBtn"));
+    $("#reset").text(chrome.i18n.getMessage("resetBtn"));
 
     // Fill in on load
     var userSites;
@@ -22,7 +23,6 @@ $(document).ready(function() {
             return s.length ? s : null;
         });
         if (newsites.length) {
-            sites = newsites;
             try {
                 localStorage.setItem("sites", JSON.stringify(newsites))
                 window.close()
@@ -31,5 +31,16 @@ $(document).ready(function() {
                 $("#msg").text(chrome.i18n.getMessage("saveFailed"));
             }
         }
+    });
+
+    $("#reset").click(function() {
+        try {
+            localStorage.removeItem("sites")
+        } catch (e) {
+            // ignore: Nothing wrong if you don't have it in localStorage
+        };
+        // Clear message and reset textarea to default
+        $("#msg").text('');
+        $("#input").val(sites.join("\n"));
     });
 });

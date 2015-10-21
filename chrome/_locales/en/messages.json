@@ -25,6 +25,10 @@
         "message":"Continue",
         "description":"Continue button text"
     },
+    "resetBtn":{
+        "message":"Reset",
+        "description":"Reset button text in option page"
+    },
     "saveBtn":{
         "message":"Save",
         "description":"Save button text in option page"
