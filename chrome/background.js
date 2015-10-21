@@ -12,7 +12,7 @@ function inFilter(hostname) {
     };
     for (var i in userSites) {
         var site = userSites[i];
-        var re = new RegExp("\\.?" + site.replace(".","\\.") + "$");
+        var re = new RegExp("\\b" + site.replace(".","\\.") + "$");
         if (hostname.match(re))
             return true;
     }
