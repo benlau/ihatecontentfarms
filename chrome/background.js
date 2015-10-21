@@ -1,4 +1,4 @@
-
+var sites = require('./sites');
 
 function hostname(url) {
     var parser = document.createElement('a');

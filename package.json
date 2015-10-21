@@ -1,0 +1,31 @@
+{
+  "name": "contentfarmblocker",
+  "version": "0.1.5",
+  "description": "To prevent click content farm mistakenly",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benlau/ihatecontentfarms.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "author": "Ben Lau",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/benlau/ihatecontentfarms/issues"
+  },
+  "homepage": "https://github.com/benlau/ihatecontentfarms",
+  "dependencies": {
+    "del": "^2.0.2",
+    "gulp-util": "^3.0.7",
+    "merge": "^1.2.0"
+  }
+}

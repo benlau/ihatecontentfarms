@@ -1,4 +1,4 @@
-# I Hate Content Farms
+# Content Farm Blocker
 ======================
 
 你今天震驚了嗎？有否為大量誇張失實的標題文章湧進日常生活而感到厭感？
@@ -19,4 +19,4 @@
 
 下載:
 
-[I Hate Content Farms - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
+[Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)

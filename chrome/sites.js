@@ -36,3 +36,5 @@ var sites = [
     "shareba.com",
     "discoss.com"
 ];
+
+module.exports = sites;
