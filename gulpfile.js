@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     webpack = require('webpack'),
     gutil = require('gulp-util'),
     del = require('del'),
-    _ = require('lodash');
+    _ = require('lodash'),
+    path = require('path');
 
 var chromeBuildFolder = "./build/chrome";
 
@@ -18,6 +19,9 @@ var webpackConfig = {
         loaders: [
             {test: /\.js$/, loader: "babel-loader", exclude: /node_modules/},
         ]
+    },
+    resolve: {
+        root: path.resolve("./src")
     }
 }
 
@@ -82,6 +86,7 @@ gulp.task("mocha:build", function(callback) {
                                 path: __dirname + "/build/tests",
                                 filename: "main.js"
                             },
+                            devtool: 'source-map',
                             entry: "./tests/main.js"        
                         });
     

@@ -1,0 +1,10 @@
+language : node_js 
+before_install:
+    - sudo add-apt-repository --yes ppa:chris-lea/node.js
+    - sudo apt-get install nodejs
+script:
+    - npm install .
+    - nom install -G gulp
+    - gulp mocha
+    - mocha --require source-map-support/register build/tests/main.js
+

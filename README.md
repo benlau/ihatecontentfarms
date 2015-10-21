@@ -25,6 +25,6 @@
 Unit Tests
 ----------
 
-gulp mocha:build
-mocha --require source-map-support/register build/tests/main.js
+    gulp mocha:build
+    mocha --require source-map-support/register build/tests/main.js
 

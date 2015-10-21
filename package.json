@@ -30,7 +30,12 @@
     "babel-loader": "^5.3.2",
     "del": "^2.0.2",
     "gulp-util": "^3.0.7",
+    "jsdom": "^6.5.1",
     "merge": "^1.2.0",
+    "mocha": "^2.3.3",
+    "mocha-jsdom": "^1.0.0",
+    "parse-url": "^1.0.0",
+    "path": "^0.12.7",
     "source-map-support": "^0.3.2"
   }
 }
