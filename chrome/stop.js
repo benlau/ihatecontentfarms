@@ -10,7 +10,7 @@ $(document).ready(function() {
         var token = queryString.split("&");
         var to = "";
         for (var i = 0; i < token.length; i++) {
-            var pair = token[i].split('=');
+            var pair = token[i].split("=");
             if (decodeURIComponent(pair[0]) == "to") {
                 to = decodeURIComponent(pair[1]);
                 break;

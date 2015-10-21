@@ -17,6 +17,7 @@ describe("Filter", () => {
         
     });
     
+    // This function should be used for blogspot only
     it("match with asterisk", () => {
         var filter = new Filter();
         filter.appendBlackList(["contentfarm.blogspot.*","contentfarm.com"]);

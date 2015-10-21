@@ -1,24 +1,18 @@
-var sites = require('./sites');
+var sites = require("./sites"),
+    Filter = require("cfblocker/Filter");
 
 function hostname(url) {
-    var parser = document.createElement('a');
+    var parser = document.createElement("a");
     parser.href = url;
     return parser.hostname;
 }
 
-function inFilter(hostname) {
-    for (var i in sites) {
-        var site = sites[i];
-        var re = new RegExp("^[a-zA-Z0-9\.]*\\.+" + site+"$|^"+site +"$");
-        if (hostname.match(re))
-            return true;
-    }    
-    return false;
-}
-
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+    var filter = new Filter();
+    
+    filter.appendBlackList(sites);
         
-    if (inFilter(hostname(tab.url))) {
+    if (filter.match(hostname(tab.url))) {
         var whiteList ;
         try {
             whiteList = JSON.parse(localStorage.getItem("whiteList") || "");
