@@ -36,6 +36,8 @@ var sites = [
     "shareba.com",
     "discoss.com",
     "faminereports.blogspot.*",
+    "dsy39.com",
+    "wholehk.com",
     "push01.com"
 
 ];
