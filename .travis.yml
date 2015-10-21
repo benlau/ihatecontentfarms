@@ -4,7 +4,8 @@ before_install:
     - sudo apt-get install nodejs
 script:
     - npm install .
-    - nom install -G gulp
+    - npm install -G gulp
     - gulp mocha
     - mocha --require source-map-support/register build/tests/main.js
+    - gulp chrome
 
