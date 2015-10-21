@@ -1,3 +1,11 @@
+var LocalStorageStore = require("cfblocker/LocalStorageStore");
+
+function hostname(url) {
+    var parser = document.createElement("a");
+    parser.href = url;
+    return parser.hostname;
+}
+
 $(document).ready(function() {
     $("title").text(chrome.i18n.getMessage("title"));
     $("h1").text(chrome.i18n.getMessage("header"));
@@ -6,6 +14,8 @@ $(document).ready(function() {
     $("#continue").text(chrome.i18n.getMessage("contBtn"));
 
     $("#continue").click(function() {
+        var key = "tmpWhiteList";
+        
         var queryString = window.location.search.substring(1);
         var token = queryString.split("&");
         var to = "";
@@ -19,21 +29,25 @@ $(document).ready(function() {
 
         var whiteList 
         try {
-            whiteList = JSON.parse(localStorage.getItem("whiteList") || "");
+            whiteList = JSON.parse(localStorage.getItem(key) || "");
         } catch (e) {
             whiteList = {};
         }
+
+        var field = hostname(to);
         
-        whiteList[to] = new Date().getTime();
+        whiteList[field] = new Date().getTime();
         
         try {
-            localStorage.setItem("whiteList",JSON.stringify(whiteList));
+            localStorage.setItem(key,JSON.stringify(whiteList));
         } catch (err) {
             // e.g. quote exceed. Just purge old data
-            whiteList = {from: true}; 
-            localStorage.setItem("whiteList",JSON.stringify(whiteList));
+            whiteList = {}; 
+            whiteList[field] = true;
+            localStorage.setItem(key,JSON.stringify(whiteList));
         }
 
+        LocalStorageStore.blockWebRequestFilter();
         window.location.href = to;
     });
     

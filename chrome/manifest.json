@@ -6,6 +6,6 @@
   "background" : {
   	"scripts" : ["background.js"]
   },
-  "permissions": [ "tabs"],
+  "permissions": [ "tabs" ,"webRequest", "webRequestBlocking" , "http://*/", "https://*/"],
   "default_locale": "en"
 }
