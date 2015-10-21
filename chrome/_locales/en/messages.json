@@ -1,28 +1,44 @@
-{  
-    "appName":{  
+{
+    "appName":{
         "message":"Content Farm Blocker"
     },
-    "appDesc":{  
-        "message":"To prevent click content farm mistakenly"
+    "appDesc":{
+        "message":"Prevent clicking content farm by mistake"
     },
-    "title":{  
+    "title":{
         "message":"Beware! Content Farm!",
         "description":"Title for stop page"
     },
-    "header":{  
+    "header":{
         "message":"You're going to visit a content farm",
         "description":"Header of warning in stop page"
     },
-    "body":{  
+    "body":{
         "message":"Continue? Back if you are annoyed with them.",
         "description":"Body of warning message"
     },
-    "backBtn":{  
+    "backBtn":{
         "message":"Back",
         "description":"Back button text"
     },
-    "contBtn":{  
+    "contBtn":{
         "message":"Continue",
         "description":"Continue button text"
+    },
+    "resetBtn":{
+        "message":"Reset",
+        "description":"Reset button text in option page"
+    },
+    "saveBtn":{
+        "message":"Save",
+        "description":"Save button text in option page"
+    },
+    "sitelist":{
+        "message":"Content farm domains",
+        "description":"Option page site list caption"
+    },
+    "saveFailed":{
+        "message":"Cannot save. Local storage quota exceed",
+        "description":"Option page save fail message"
     }
 }

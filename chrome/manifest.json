@@ -3,9 +3,10 @@
   "version": "0.1.4",
   "description": "__MSG_appDesc__",
   "manifest_version": 2,
+  "options_page": "options.html",
   "background" : {
-  	"scripts" : ["sites.js","background.js"]
+      "scripts" : ["sites.js","background.js"]
   },
-  "permissions": [ "tabs"],
+  "permissions": ["tabs"],
   "default_locale": "en"
 }

@@ -1,28 +1,44 @@
-{  
-    "appName":{  
+{
+    "appName":{
         "message":"封鎖內容農場"
     },
-    "appDesc":{  
+    "appDesc":{
         "message":"防止不小心打開內容農場的文章"
     },
-    "title":{  
+    "title":{
         "message":"內容農場注意",
         "description":"Title for stop page"
     },
-    "header":{  
+    "header":{
         "message":"你正準備打開內容農場",
         "description":"Header of warning in stop page"
     },
-    "body":{  
+    "body":{
         "message":"要繼續嗎？要是感到煩厭，放棄也是一種選擇啊。",
         "description":"Body of warning message"
     },
-    "backBtn":{  
+    "backBtn":{
         "message":"返回",
         "description":"Back button text"
     },
-    "contBtn":{  
+    "contBtn":{
         "message":"繼續",
         "description":"Continue button text"
+    },
+    "resetBtn":{
+        "message":"重設",
+        "description":"Reset button text in option page"
+    },
+    "saveBtn":{
+        "message":"儲存",
+        "description":"Save button text in option page"
+    },
+    "sitelist":{
+        "message":"內容農場域名",
+        "description":"Option page site list caption"
+    },
+    "saveFailed":{
+        "message":"儲存失敗。應該是儲存空間不足。",
+        "description":"Option page save fail message"
     }
 }
