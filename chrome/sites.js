@@ -38,8 +38,8 @@ var sites = [
     "faminereports.blogspot.*",
     "dsy39.com",
     "wholehk.com",
-    "push01.com"
-
+    "push01.com",
+    "how01.com"
 ];
 
 module.exports = sites;
