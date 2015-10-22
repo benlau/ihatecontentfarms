@@ -28,7 +28,7 @@ var sites = [
     "newstube01.tv",
     "bomb01.com",
     "share001.net",
-    "cmoney.net",
+    "cmoney.tw",
     "daliulian.net",
     "hssszn.com",
     "hothk.com",

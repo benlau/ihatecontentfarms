@@ -56,7 +56,7 @@ gulp.task('clean', del.bind(
   null, ['build/*'], {dot: true}
 ));
 
-gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop","chrome:bundle"]);
+gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop"]);
 
 gulp.task("chrome:assets", function() {
     var assets = [
@@ -81,7 +81,7 @@ gulp.task("chrome:stop", function(callback) {
 });
 
 gulp.task("chrome:bundle", function() {
-    return gulp.src(["chrome/**/*"], { base: "./chrome" })
+    return gulp.src(["build/chrome/**/*"], { base: "./build/chrome" })
             .pipe(zip("chrome.zip"))
             .pipe(gulp.dest("./build"));
 });
