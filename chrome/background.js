@@ -65,8 +65,8 @@ chrome.webRequest.onBeforeRequest.addListener(function(info) {
     return {cancel: cancel};
 
 },{
-        urls: ["*://*/*"]
-    },["blocking"]
+    urls: ["*://*/*"]
+},["blocking"]
 );
 
 chrome.tabs.onCreated.addListener(function(tab) {
