@@ -39,7 +39,11 @@ var sites = [
     "dsy39.com",
     "wholehk.com",
     "push01.com",
-    "how01.com"
+    "how01.com",
+    "getjoyz.com",
+    "ezgoe.com",
+    "ilife97.com",
+    "buzzlife.com.tw"
 ];
 
 module.exports = sites;
