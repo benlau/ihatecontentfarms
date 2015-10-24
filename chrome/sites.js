@@ -43,7 +43,10 @@ var sites = [
     "getjoyz.com",
     "ezgoe.com",
     "ilife97.com",
-    "buzzlife.com.tw"
+    "buzzlife.com.tw",
+    "superfun-e.com",
+    "ck101.com",
+    "spicemami.com"
 ];
 
 module.exports = sites;
