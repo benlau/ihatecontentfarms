@@ -1,3 +1,6 @@
+/* No need to include "www" prefix
+ */
+
 var sites = [
     "life.com.tw",
     "yourhope.info",
@@ -46,7 +49,8 @@ var sites = [
     "buzzlife.com.tw",
     "superfun-e.com",
     "ck101.com",
-    "spicemami.com"
+    "spicemami.com",
+    "picallies.com"
 ];
 
 module.exports = sites;
