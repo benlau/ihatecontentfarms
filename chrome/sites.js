@@ -18,7 +18,6 @@ var sites = [
     "peopleinsider.blogspot.*",
     "viralane.com",
     "metalballs.com",
-    "zoupy.com",
     "funvdo01.com",
     "likea.ezvivi.com",
     "youthwant.com.tw",
