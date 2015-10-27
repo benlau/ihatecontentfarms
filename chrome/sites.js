@@ -56,7 +56,7 @@ var sites = [
     "bubuko.com",
     "mamicode.com",
     "programgo.com",
-    "dnbcw.info"
+    "dnbcw.info",
 ];
 
 module.exports = sites;
