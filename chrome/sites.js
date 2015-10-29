@@ -51,6 +51,12 @@ var sites = [
     "spicemami.com",
     "picallies.com",
     "buzzorange.com",
+    "guudo.cn",
+    "fanli7.net",
+    "bubuko.com",
+    "mamicode.com",
+    "programgo.com",
+    "dnbcw.info",
 ];
 
 module.exports = sites;
