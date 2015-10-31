@@ -38,5 +38,8 @@
     "mocha": "^2.3.3",
     "path": "^0.12.7",
     "source-map-support": "^0.3.2"
+  },
+  "scripts": {
+     "test" : "gulp mocha:build;mocha --require source-map-support/register build/tests/main.js"
   }
 }

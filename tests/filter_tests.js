@@ -1,6 +1,7 @@
 
 import assert from "assert";
 import Filter from "cfblocker/Filter";
+import sites from "../chrome/sites";
     
 describe("Filter", () => {
     
@@ -32,6 +33,18 @@ describe("Filter", () => {
         assert(filter.match("contentfarm.blogspot.com"));
         assert(filter.match("contentfarm.blogspot.hk"));
         assert(!filter.match("contentfarm.blogspotsite.com"));
+    });
+    
+    it("sites duplication checking", () => {
+        var map = {};
+        for (var i in sites) {
+            var site = sites[i];
+            if (map.hasOwnProperty(site)){
+                throw new Error(site + " is duplicated");
+            }
+            map[site] = true;
+        }
+        
     });
     
     
