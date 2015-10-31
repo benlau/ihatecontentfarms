@@ -1,4 +1,6 @@
-/* No need to include "www" prefix
+/* Rules:
+
+   1. Don't include "www" prefix
  */
 
 var sites = [
@@ -10,8 +12,7 @@ var sites = [
     "buzzhand.com",
     "buzzhand.net",
     "ptt01.cc",
-    "tw.gigacircle.com",
-    "tw4.gigacircle.com",
+    "gigacircle.com",
     "eazon.com",
     "juksy.com",
     "peopleinsider.net",
@@ -57,6 +58,9 @@ var sites = [
     "mamicode.com",
     "programgo.com",
     "dnbcw.info",
+    "7jiu.com.hk",
+    "yourfacts.club", // FB Share trap
+    "tw.anyelse.com",
 ];
 
 module.exports = sites;
