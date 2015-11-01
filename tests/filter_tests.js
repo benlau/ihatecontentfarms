@@ -35,6 +35,24 @@ describe("Filter", () => {
         assert(!filter.match("contentfarm.blogspotsite.com"));
     });
     
+    it("match with whitelist", () => {
+        var filter = new Filter();
+        filter.appendBlackList(["contentfarm.blogspot.*"]);
+        filter.appendBlackList(["contentfarm.com"])
+        filter.appendWhiteList(["google.com","contentfarm.blogspot.hk"]);
+        
+        assert(filter.match("contentfarm.com"));
+        assert(filter.match("www.contentfarm.com"));
+        assert(filter.match("www2.en.contentfarm.com"));
+        assert(!filter.match("xcontentfarm.com"));
+        assert(!filter.match("facebook.com"));
+        assert(!filter.match("contentfarm2.com"));
+        
+        assert(filter.match("contentfarm.blogspot.com"));
+        assert(!filter.match("contentfarm.blogspot.hk"));
+        assert(!filter.match("contentfarm.blogspotsite.com"));
+    });
+    
     it("sites duplication checking", () => {
         var map = {};
         for (var i in sites) {
