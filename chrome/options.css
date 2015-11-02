@@ -19,16 +19,29 @@ h1,h2 {
 }
 
 .header h1 {
-    padding: 1em 1.5em;
     font-weight: bold;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.header img {
+    padding-left: 1em;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    vertical-align:middle;
 }
 
 .subheader h1 {
     background: #efefef;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     padding: 1em 1.5em;
     -webkit-transition: background .1s linear;
     transition: background .1s linear;
-    margin: 0;
+    vertical-align: middle;
 }
 
 .field {
