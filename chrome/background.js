@@ -1,5 +1,6 @@
 var sites = require("./sites"),
     Filter = require("cfblocker/Filter"),
+    ListFormatter = require("cfblocker/ListFormatter"),
     LocalStorageStore = require("cfblocker/LocalStorageStore");
 
 function hostname(url) {
@@ -15,7 +16,10 @@ function block(url) {
         key = "tmpWhiteList";
     
     filter.appendBlackList(sites);
-        
+    filter.appendBlackList(ListFormatter.parse(LocalStorageStore.userBlackList));
+
+    filter.appendWhiteList(ListFormatter.parse(LocalStorageStore.userWhiteList));
+
     if (filter.match(domain)) {
         var whiteList ;
         try {

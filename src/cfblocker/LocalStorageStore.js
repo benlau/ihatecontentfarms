@@ -5,7 +5,6 @@ import ListFormatter from "./ListFormatter";
 var threshold = 10 * 60 * 1000;
 
 function _getArray(key) {
-    console.log("_getArray",key);
     var ret = [];
     try {
         ret = JSON.parse(localStorage.getItem(key));
@@ -13,7 +12,7 @@ function _getArray(key) {
         ret = [];
     }
 
-    if (!$.isArray(ret)) {
+    if (!Array.isArray(ret)) {
         ret = [];
     }
 

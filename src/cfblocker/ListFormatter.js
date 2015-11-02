@@ -24,7 +24,7 @@ export default class ListFormatter {
         if (input === null) {
             input = [];
         }
-        if (!$.isArray(input)) {
+        if (!Array.isArray(input)) {
             return String(input);
         }
         return input.join(", ");

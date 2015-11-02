@@ -7,5 +7,6 @@
   	"scripts" : ["background.js"]
   },
   "permissions": [ "tabs" ,"webRequest", "webRequestBlocking" , "http://*/", "https://*/"],
-  "default_locale": "en"
+  "default_locale": "en",
+  "options_page": "options.html"
 }
