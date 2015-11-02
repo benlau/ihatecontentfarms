@@ -56,7 +56,7 @@ gulp.task('clean', del.bind(
   null, ['build/*'], {dot: true}
 ));
 
-gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop"]);
+gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop","chrome:options"]);
 
 gulp.task("chrome:assets", function() {
     var assets = [
@@ -78,6 +78,10 @@ gulp.task("chrome:background", function(callback) {
 
 gulp.task("chrome:stop", function(callback) {
     chromeWebpack("stop.js",callback);
+});
+
+gulp.task("chrome:options", function(callback) {
+    chromeWebpack("options.js",callback);
 });
 
 gulp.task("chrome:bundle", function() {

@@ -1,6 +1,26 @@
 
+import ListFormatter from "./ListFormatter";
+
 //10 minus
 var threshold = 10 * 60 * 1000;
+
+function _getArray(key) {
+    console.log("_getArray",key);
+    var ret = [];
+    try {
+        ret = JSON.parse(localStorage.getItem(key));
+    } catch (e) {
+        ret = [];
+    }
+
+    if (!$.isArray(ret)) {
+        ret = [];
+    }
+
+    console.log("_getArray",ret);
+
+    return ret;
+}
 
 export default class LocalStorageStore {
     
@@ -21,6 +41,21 @@ export default class LocalStorageStore {
         
         localStorage.setItem("blockWebRequestFilter",timestamp);
     }
+
+    static get userBlackList() {
+        return _getArray("userBlackList");
+    }
     
+    static set userBlackList(val) {
+        localStorage.setItem("userBlackList",JSON.stringify(val));
+    }
+
+    static get userWhiteList() {
+        return _getArray("userWhiteList");
+    }
     
+    static set userWhiteList(val) {
+        localStorage.setItem("userWhiteList",JSON.stringify(val));
+    }
+
 }

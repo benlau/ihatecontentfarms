@@ -24,7 +24,7 @@ export default class Filter {
             var rx = this.createRegExp(item);
             this._whiteList.push(item);
             this._whiteListRx.push(rx);
-        }        
+        }
     }
     
     match(hostname) {
