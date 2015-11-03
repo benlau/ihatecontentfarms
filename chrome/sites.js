@@ -61,6 +61,7 @@ var sites = [
     "7jiu.com.hk",
     "yourfacts.club", // FB Share trap
     "tw.anyelse.com",
+    "shareonion.com",
 ];
 
 module.exports = sites;
