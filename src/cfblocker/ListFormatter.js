@@ -7,7 +7,7 @@ export default class ListFormatter {
             input = "";
         }
         
-        var token = String(input).split(/[ ,]/);
+        var token = String(input).split(/[ ,\n]/);
         for (var i = token.length - 1 ; i >= 0 ; i--) {
             var item = token[i].trim();
             if (item === "") {
