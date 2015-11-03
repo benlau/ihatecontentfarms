@@ -7,7 +7,8 @@ var gulp = require('gulp'),
     del = require('del'),
     _ = require('lodash'),
     path = require('path'),
-    zip = require('gulp-zip');
+    zip = require('gulp-zip'),
+    runSequence = require('run-sequence');
 
 var chromeBuildFolder = "./build/chrome";
 
@@ -51,6 +52,12 @@ function chromeWebpack(filename,callback) {
         callback();
     });
 }
+
+gulp.task('default', function(callback) {
+    runSequence ("clean",
+                 "chrome",
+                 callback);
+});
 
 gulp.task('clean', del.bind(
   null, ['build/*'], {dot: true}

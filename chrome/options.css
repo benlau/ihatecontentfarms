@@ -23,29 +23,29 @@ h1,h2 {
     display: inline-block;
     font-size: 1.2em;
     padding: 0;
-    margin: 0;
+    vertical-align: middle;
 }
 
 .header img {
     padding-left: 1em;
+    padding-right: 1em;
     display: inline-block;
-    width: 3em;
-    height: 3em;
-    vertical-align:middle;
-}
-
-.subheader h1 {
-    background: #efefef;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    padding: 1em 1.5em;
-    -webkit-transition: background .1s linear;
-    transition: background .1s linear;
+    width: 2.5em;
+    height: 2.5em;
     vertical-align: middle;
 }
 
+.subheader h1 {
+    -webkit-transition: background .1s linear;
+    transition: background .1s linear;
+    vertical-align: middle;
+    opacity: 0.54;
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
 .field {
-    padding: 1em 1.5em;
+    padding: 0 0 0 1em;
     overflow: hidden;
     margin: 0.5em 0 0 0;    
 }
@@ -72,10 +72,9 @@ h1,h2 {
 
 .submit {
     display: inline-block;
-    margin-right: 0.5em;
     text-decoration: none;
     border: none;
-    background-color: rgb(84,152,47);
+    background-color: rgb(81,45,168);
     border-radius: 3px;
     padding: 1em 1.5em;
     color: white;
@@ -84,10 +83,11 @@ h1,h2 {
     text-transform: uppercase;
     -webkit-transition: background .1s linear;
     transition: background .1s linear;    
+    float: right;
 }
 
 .submit:hover {
-    background-color: rgba(84,152,47,0.8);
+    background-color: rgba(81,45,168,0.8);
 }
 
 .submit.disabled {

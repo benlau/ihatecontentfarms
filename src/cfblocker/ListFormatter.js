@@ -27,7 +27,7 @@ export default class ListFormatter {
         if (!Array.isArray(input)) {
             return String(input);
         }
-        return input.join(", ");
+        return input.join("\n");
     }
     
 }
