@@ -14,14 +14,14 @@ body {
 }
 
 h1,h2 {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: normal;
 }
 
 .header h1 {
     font-weight: bold;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 20px;
     padding: 0;
     vertical-align: middle;
 }
@@ -50,11 +50,21 @@ h1,h2 {
     margin: 0.5em 0 0 0;    
 }
 
-.field h2 {
+
+.fieldLabel {
     width: 32%;
-    float: left;
-    font-weight: bold;   
+    float: left;    
     margin-top: 1em;
+}
+
+.fieldLabel h2 {
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+}
+
+.fieldLabel span{
+    font-size: 14px;
+    opacity: 0.54;
 }
 
 .fieldset {
@@ -68,6 +78,7 @@ h1,h2 {
     height: 8em;
     font-size: 14px;
     line-height: 18px;
+    resize: vertical;
 }
 
 .submit {

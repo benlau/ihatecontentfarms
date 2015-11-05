@@ -7,7 +7,7 @@ describe("Filter", () => {
     
     it("match", () => {
         var filter = new Filter();
-        filter.appendBlackList(["contentfarm.com"]);
+        filter.appendBlacklist(["contentfarm.com"]);
         
         assert(filter.match("contentfarm.com"));
         assert(filter.match("www.contentfarm.com"));
@@ -21,7 +21,7 @@ describe("Filter", () => {
     // This function should be used for blogspot only
     it("match with asterisk", () => {
         var filter = new Filter();
-        filter.appendBlackList(["contentfarm.blogspot.*","contentfarm.com"]);
+        filter.appendBlacklist(["contentfarm.blogspot.*","contentfarm.com"]);
         
         assert(filter.match("contentfarm.com"));
         assert(filter.match("www.contentfarm.com"));
@@ -35,11 +35,11 @@ describe("Filter", () => {
         assert(!filter.match("contentfarm.blogspotsite.com"));
     });
     
-    it("match with whitelist", () => {
+    it("match with Whitelist", () => {
         var filter = new Filter();
-        filter.appendBlackList(["contentfarm.blogspot.*"]);
-        filter.appendBlackList(["contentfarm.com"])
-        filter.appendWhiteList(["google.com","contentfarm.blogspot.hk"]);
+        filter.appendBlacklist(["contentfarm.blogspot.*"]);
+        filter.appendBlacklist(["contentfarm.com"])
+        filter.appendWhitelist(["google.com","contentfarm.blogspot.hk"]);
         
         assert(filter.match("contentfarm.com"));
         assert(filter.match("www.contentfarm.com"));

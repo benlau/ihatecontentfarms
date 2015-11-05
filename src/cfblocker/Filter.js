@@ -3,41 +3,41 @@
 export default class Filter {
     
     constructor() {
-        this._blackList = [];    
-        this._whiteList = [];
-        this._blackListRx = [];
-        this._whiteListRx = [];
+        this._Blacklist = [];    
+        this._Whitelist = [];
+        this._BlacklistRx = [];
+        this._WhitelistRx = [];
     }
     
-    appendBlackList(list) {
+    appendBlacklist(list) {
         for (var i in list) {
             var item = list[i];
             var rx = this.createRegExp(item);
-            this._blackList.push(item);
-            this._blackListRx.push(rx);
+            this._Blacklist.push(item);
+            this._BlacklistRx.push(rx);
         }
     }
     
-    appendWhiteList(list) {
+    appendWhitelist(list) {
         for (var i in list) {
             var item = list[i];
             var rx = this.createRegExp(item);
-            this._whiteList.push(item);
-            this._whiteListRx.push(rx);
+            this._Whitelist.push(item);
+            this._WhitelistRx.push(rx);
         }
     }
     
     match(hostname) {
         var ret = false;
         hostname = hostname.toLowerCase();
-        for (var i in this._blackListRx) {
-            var pattern = this._blackListRx[i];
+        for (var i in this._BlacklistRx) {
+            var pattern = this._BlacklistRx[i];
             if (hostname.match(pattern)) {
                 
                 ret = true;
                 
-                for (var j in this._whiteListRx) {
-                    if (hostname.match(this._whiteListRx[j])) {
+                for (var j in this._WhitelistRx) {
+                    if (hostname.match(this._WhitelistRx[j])) {
                         ret = false;
                         break;
                     }                    

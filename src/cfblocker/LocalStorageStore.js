@@ -41,20 +41,20 @@ export default class LocalStorageStore {
         localStorage.setItem("blockWebRequestFilter",timestamp);
     }
 
-    static get userBlackList() {
-        return _getArray("userBlackList");
+    static get userBlacklist() {
+        return _getArray("userBlacklist");
     }
     
-    static set userBlackList(val) {
-        localStorage.setItem("userBlackList",JSON.stringify(val));
+    static set userBlacklist(val) {
+        localStorage.setItem("userBlacklist",JSON.stringify(val));
     }
 
-    static get userWhiteList() {
-        return _getArray("userWhiteList");
+    static get userWhitelist() {
+        return _getArray("userWhitelist");
     }
     
-    static set userWhiteList(val) {
-        localStorage.setItem("userWhiteList",JSON.stringify(val));
+    static set userWhitelist(val) {
+        localStorage.setItem("userWhitelist",JSON.stringify(val));
     }
 
 }

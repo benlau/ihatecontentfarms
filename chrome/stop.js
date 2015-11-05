@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("#continue").text(chrome.i18n.getMessage("contBtn"));
 
     $("#continue").click(function() {
-        var key = "tmpWhiteList";
+        var key = "tmpWhitelist";
         
         var queryString = window.location.search.substring(1);
         var token = queryString.split("&");
@@ -27,24 +27,24 @@ $(document).ready(function() {
             }
         }
 
-        var whiteList 
+        var Whitelist 
         try {
-            whiteList = JSON.parse(localStorage.getItem(key) || "");
+            Whitelist = JSON.parse(localStorage.getItem(key) || "");
         } catch (e) {
-            whiteList = {};
+            Whitelist = {};
         }
 
         var field = hostname(to);
         
-        whiteList[field] = new Date().getTime();
+        Whitelist[field] = new Date().getTime();
         
         try {
-            localStorage.setItem(key,JSON.stringify(whiteList));
+            localStorage.setItem(key,JSON.stringify(Whitelist));
         } catch (err) {
             // e.g. quote exceed. Just purge old data
-            whiteList = {}; 
-            whiteList[field] = true;
-            localStorage.setItem(key,JSON.stringify(whiteList));
+            Whitelist = {}; 
+            Whitelist[field] = true;
+            localStorage.setItem(key,JSON.stringify(Whitelist));
         }
 
         LocalStorageStore.blockWebRequestFilter();

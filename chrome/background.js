@@ -13,36 +13,36 @@ function block(url) {
     var filter = new Filter(),
         ret = false,
         domain = hostname(url),
-        key = "tmpWhiteList";
+        key = "tmpWhitelist";
     
-    filter.appendBlackList(sites);
-    filter.appendBlackList(ListFormatter.parse(LocalStorageStore.userBlackList));
+    filter.appendBlacklist(sites);
+    filter.appendBlacklist(ListFormatter.parse(LocalStorageStore.userBlacklist));
 
-    filter.appendWhiteList(ListFormatter.parse(LocalStorageStore.userWhiteList));
+    filter.appendWhitelist(ListFormatter.parse(LocalStorageStore.userWhitelist));
 
     if (filter.match(domain)) {
-        var whiteList ;
+        var Whitelist ;
         try {
-            whiteList = JSON.parse(localStorage.getItem(key) || "");
+            Whitelist = JSON.parse(localStorage.getItem(key) || "");
         } catch (e) {
-            whiteList = {};            
+            Whitelist = {};            
         }
         
-        if (whiteList.hasOwnProperty(domain)) {
+        if (Whitelist.hasOwnProperty(domain)) {
             var timestamp = (new Date()).getTime();
             var threshold = 10 * 60 * 1000; // Ten minutes
-            if (timestamp - whiteList[domain] > threshold) {
-                delete whiteList[domain];
+            if (timestamp - Whitelist[domain] > threshold) {
+                delete Whitelist[domain];
                 
                 try {
-                    localStorage.setItem(key,JSON.stringify(whiteList));
+                    localStorage.setItem(key,JSON.stringify(Whitelist));
                 } catch (err) {
                     console.error(err);
                 }
             }
         }
         
-        if (!whiteList.hasOwnProperty(domain)) {
+        if (!Whitelist.hasOwnProperty(domain)) {
             ret = true;
         }
     }

@@ -7,15 +7,15 @@ $(document).ready(() => {
     
     var submitButton = "#submitButton";
     
-    var userBlackListTextArea = "#userBlackList textarea";
-    var userWhiteListTextArea = "#userWhiteList textarea";
+    var userBlacklistTextArea = "#userBlacklist textarea";
+    var userWhitelistTextArea = "#userWhitelist textarea";
     
     function submit() {
         $(submitButton).addClass("disabled");
         $(submitButton).text("Saved");
         
-        LocalStorageStore.userBlackList = ListFormatter.parse($(userBlackListTextArea).val());
-        LocalStorageStore.userWhiteList = ListFormatter.parse($(userWhiteListTextArea).val());
+        LocalStorageStore.userBlacklist = ListFormatter.parse($(userBlacklistTextArea).val());
+        LocalStorageStore.userWhitelist = ListFormatter.parse($(userWhitelistTextArea).val());
 
     }
     
@@ -28,15 +28,15 @@ $(document).ready(() => {
         });
     }
     
-    $("#systemBlackList textarea").val(ListFormatter.stringify(sites));
+    $("#systemBlacklist textarea").val(ListFormatter.stringify(sites));
     
-    $(userBlackListTextArea).on("change keyup paste", enableButton);
+    $(userBlacklistTextArea).on("change keyup paste", enableButton);
     
-    $(userBlackListTextArea).val(ListFormatter.stringify(LocalStorageStore.userBlackList));
+    $(userBlacklistTextArea).val(ListFormatter.stringify(LocalStorageStore.userBlacklist));
     
-    $(userWhiteListTextArea).on("change keyup paste", enableButton);
+    $(userWhitelistTextArea).on("change keyup paste", enableButton);
     
-    $(userWhiteListTextArea).val(ListFormatter.stringify(LocalStorageStore.userWhiteList));
+    $(userWhitelistTextArea).val(ListFormatter.stringify(LocalStorageStore.userWhitelist));
 
     $("#submitButton").click(function() {
         $("#submitButton").addClass("disabled");
