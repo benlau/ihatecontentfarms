@@ -62,7 +62,12 @@ var sites = [
     "yourfacts.club", // FB Share trap
     "tw.anyelse.com",
     "shareonion.com",
-    "hkwall.com"
+    "hkwall.com",
+    "gjoyz.com",
+    "buzz01.com",
+    "orange01.org",
+    "circle01.com"
+
 ];
 
 module.exports = sites;
