@@ -9,15 +9,15 @@
     
         <div class="content">
             
-            <div class="header"><img src="./img/alert-octagon.svg"/><h1>Content Farm Blocker</h1></div>
+            <div class="header"><img src="./img/alert-octagon.svg"/><h1 id="appNameLabel"></h1></div>
             
-            <div class="subheader"><h1>Preventing to open content farm by mistake</h1></div>
+            <div class="subheader"><h1 id="appDescLabel"></h1></div>
             
             <div class="options">
                 <div id="systemBlacklist" class="field" >
                     <div class="fieldLabel">
-                        <h2 id="systemBlacklistLabel">System Blacklist</h2>
-                        <span>Default Blacklist(Read-only)</span>
+                        <h2 id="systemBlacklistLabel"></h2>
+                        <span id="systemBlacklistDescLabel">Default Blacklist(Read-only)</span>
                     </div>
                     <div class="fieldSet">
                         <textarea disabled></textarea>
@@ -26,8 +26,8 @@
 
                 <div id="userBlacklist" class="field">
                     <div class="fieldLabel">
-                        <h2>User Blacklist</h2>
-                        <span>Set your own personal blacklist here. One entry per line. Wildcard(*) is allowed.</span>
+                        <h2 id="userBlacklistLabel"></h2>
+                        <span id="userBlacklistDescLabel"></span>
                     </div>
                     <div class="fieldSet">
                         <textarea></textarea>
@@ -36,9 +36,8 @@
 
                 <div id="userWhitelist" class="field">
                     <div class="fieldLabel">
-                        <h2>User Whitelist</h2>
-                        <span>Unblock your faviour sites. One entry per line. Wilcard(*) is allowed.</span>
-
+                        <h2 id="userWhitelistLabel"></h2>
+                        <span id="userWhitelistDescLabel"></span>
                     </div>
                     <div class="fieldSet">
                         <textarea></textarea>

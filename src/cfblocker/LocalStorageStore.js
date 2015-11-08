@@ -16,8 +16,6 @@ function _getArray(key) {
         ret = [];
     }
 
-    console.log("_getArray",ret);
-
     return ret;
 }
 
