@@ -19,7 +19,7 @@
     },
 
     "details": {
-        "message" : "Details",
+        "message" : "詳情",
         "description" : "Click to open options from stop page"
     },
 
@@ -40,7 +40,7 @@
     },
 
     "systemBlacklistDesc": {
-        "message" : "系統預設黑名單 (唯讀).",
+        "message" : "系統預設黑名單 (唯讀)",
         "description" : "Description of Blacklist Field for options"
     },
 
@@ -50,7 +50,7 @@
     },
 
     "userBlacklistDesc": {
-        "message" : "每行可以輸入一個用戶想封鎖的網址，可以使用通配符(*)。",
+        "message" : "每行可以輸入一個用戶想封鎖的網址，容許使用通配符(*)",
         "description" : "Description of Blacklist Field for options"
     },
 
@@ -60,7 +60,7 @@
     },
 
     "userWhitelistDesc": {
-        "message" : "解除部份網址的封鎖，同樣地每行一個，可以使用通配符(*)。",
+        "message" : "解除部份網址的封鎖，同樣地每行一個，容許使用通配符(*)",
         "description" : "Description of Whitelist Field for options"
     },
 
