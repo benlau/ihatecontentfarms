@@ -9,7 +9,7 @@ body {
 .content {
     display: block;
     width: 50%;
-    margin: 2.5em auto;
+    margin: 46px auto;
     min-width: 720px;
 }
 
@@ -27,11 +27,11 @@ h1,h2 {
 }
 
 .header img {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 16px;
+    padding-right: 18px;
     display: inline-block;
-    width: 2.5em;
-    height: 2.5em;
+    width: 46px;
+    height: 46px;
     vertical-align: middle;
 }
 
@@ -40,42 +40,43 @@ h1,h2 {
     transition: background .1s linear;
     vertical-align: middle;
     opacity: 0.54;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 18px;
     padding: 0;
 }
 
 .field {
-    padding: 0 0 0 1em;
+    padding: 0 0 0 18px;
     overflow: hidden;
-    margin: 0.5em 0 0 0;    
+    margin: 9px 0 0 0;
 }
 
 
 .fieldLabel {
     width: 32%;
-    float: left;    
-    margin-top: 1em;
+    float: left;
+    margin-top: 18px;
 }
 
 .fieldLabel h2 {
     font-weight: bold;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 9px 0;
 }
 
 .fieldLabel span{
     font-size: 14px;
     opacity: 0.54;
+    padding-right: 8px;
 }
 
 .fieldset {
     width: 68%;
     float: right;
-    margin-top: 1em;
+    margin-top: 18px;
 }
 
 .fieldset textarea {
     width: 100%;
-    height: 8em;
+    height: 144px;
     font-size: 14px;
     line-height: 18px;
     resize: vertical;
@@ -87,13 +88,13 @@ h1,h2 {
     border: none;
     background-color: rgb(81,45,168);
     border-radius: 3px;
-    padding: 1em 1.5em;
+    padding: 18px 24px;
     color: white;
     font-weight: bold;
-    font-size: 0.667em;
+    font-size: 12px;
     text-transform: uppercase;
     -webkit-transition: background .1s linear;
-    transition: background .1s linear;    
+    transition: background .1s linear;
     float: right;
 }
 
