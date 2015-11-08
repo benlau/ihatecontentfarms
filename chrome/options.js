@@ -20,14 +20,14 @@ $(document).ready(() => {
     var userWhitelistTextArea = "#userWhitelist textarea";
 
     var trTable = {
-       "#systemBlacklistLabel" : "systemBlacklist",
-       "#systemBlacklistDescLabel" : "systemBlacklistDesc",
-       "#userBlacklistLabel" : "userBlacklist",
-       "#userBlacklistDescLabel" : "userBlacklistDesc",
-       "#userWhitelistLabel" : "userWhitelist",
-       "#userWhitelistDescLabel" : "userWhitelistDesc",
-       "#appDescLabel": "appDesc",
-       "#appNameLabel": "appName"
+        "#systemBlacklistLabel" : "systemBlacklist",
+        "#systemBlacklistDescLabel" : "systemBlacklistDesc",
+        "#userBlacklistLabel" : "userBlacklist",
+        "#userBlacklistDescLabel" : "userBlacklistDesc",
+        "#userWhitelistLabel" : "userWhitelist",
+        "#userWhitelistDescLabel" : "userWhitelistDesc",
+        "#appDescLabel": "appDesc",
+        "#appNameLabel": "appName"
     };
 
     trTable[submitButton] = "save";
