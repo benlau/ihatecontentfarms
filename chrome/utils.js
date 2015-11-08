@@ -9,7 +9,14 @@ function hostname(url) {
     return parser.hostname;
 }
 
+function trFromTable(table) {
+    for (var i in table) {
+        $(i).text(chrome.i18n.getMessage(table[i]));
+    }
+}
+
 module.exports = {
     tr: tr,
-    hostname: hostname
+    hostname: hostname,
+    trFromTable: trFromTable
 }

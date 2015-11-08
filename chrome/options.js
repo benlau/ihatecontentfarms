@@ -1,17 +1,8 @@
 var sites = require("./sites"),
     Filter = require("cfblocker/Filter"),
     ListFormatter = require("cfblocker/ListFormatter"),
-    LocalStorageStore = require("cfblocker/LocalStorageStore");
-
-function tr(selector,message) {
-    $(selector).text(chrome.i18n.getMessage(message));
-}
-
-function translateInterface(table) {
-    for (var i in table) {
-        $(i).text(chrome.i18n.getMessage(table[i]));
-    }
-}
+    LocalStorageStore = require("cfblocker/LocalStorageStore"),
+    Utils = require("./utils");
 
 $(document).ready(() => {
     var submitButton = "#submitButton";
@@ -27,16 +18,17 @@ $(document).ready(() => {
         "#userWhitelistLabel" : "userWhitelist",
         "#userWhitelistDescLabel" : "userWhitelistDesc",
         "#appDescLabel": "appDesc",
-        "#appNameLabel": "appName"
+        "#appNameLabel": "appName",
+        "title" : "appName"
     };
 
     trTable[submitButton] = "save";
 
-    translateInterface(trTable);
+    Utils.trFromTable(trTable);
 
     function submit() {
         $(submitButton).addClass("disabled");
-        tr(submitButton,"saved");
+        Utils.tr(submitButton,"saved");
 
         LocalStorageStore.userBlacklist = ListFormatter.parse($(userBlacklistTextArea).val());
         LocalStorageStore.userWhitelist = ListFormatter.parse($(userWhitelistTextArea).val());
@@ -44,7 +36,7 @@ $(document).ready(() => {
 
     function enableButton() {
         $(submitButton).removeClass("disabled");
-        tr(submitButton,"save");
+        Utils.tr(submitButton,"save");
         $(submitButton).one("click", (e) => {
             e.preventDefault();
             submit();

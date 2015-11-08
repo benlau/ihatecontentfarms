@@ -25,10 +25,10 @@ body {
 
 .content p {
     margin-top: 32px;
-    margin-bottom: 64px;
     font-size: 20px;
     margin-left: 8px;
     margin-right: 8px;
+    margin-bottom: 40px;
 }
 
 .button {
@@ -43,11 +43,22 @@ body {
 }
 
 .button:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,0.3);
+}
+
+a {
+    color: #FFFFFF;
+    margin-left: 8px;
+    text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #FFFFFF:
+    text-decoration: underline;
+}
+
+.buttonBar {
+    margin-top: 64px;
 }
 
 #back {
@@ -57,5 +68,5 @@ a:hover {
 }
 
 #continue {
-    float:left;   
+    float:left;
 }

@@ -17,6 +17,12 @@
         "message":"要繼續嗎？要是感到煩厭，放棄也是一種選擇啊。",
         "description":"Body of warning message"
     },
+
+    "details": {
+        "message" : "Details",
+        "description" : "Click to open options from stop page"
+    },
+
     "backBtn":{
         "message":"返回",
         "description":"Back button text"

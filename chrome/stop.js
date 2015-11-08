@@ -19,11 +19,17 @@ $(document).ready(function() {
     var to = decodeQuery();
     var hostname = Utils.hostname(to);
 
-    $("title").text(chrome.i18n.getMessage("title"));
-    $("h1").text(chrome.i18n.getMessage("header") + " : " + hostname);
-    $("p").text(chrome.i18n.getMessage("body"));
-    $("#back").text(chrome.i18n.getMessage("backBtn"));
-    $("#continue").text(chrome.i18n.getMessage("contBtn"));
+    $("#warningText").text(chrome.i18n.getMessage("header") + " : " + hostname);
+
+    var trTable = {
+        "#detailsLink" : "details",
+        "title" : "title",
+        "#messageText" : "body",
+        "#back" : "backBtn",
+        "#continue" : "contBtn"
+    }
+
+    Utils.trFromTable(trTable);
 
     $("#continue").click(function() {
         var key = "tmpWhitelist";
