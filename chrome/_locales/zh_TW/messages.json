@@ -45,7 +45,7 @@
     },
 
     "userBlacklist": {
-        "message": "用戶自設黑名單",
+        "message": "用戶自定黑名單",
         "description": "Field Label for options"
     },
 
@@ -55,7 +55,7 @@
     },
 
     "userWhitelist": {
-        "message": "用戶自設白名單",
+        "message": "用戶自定白名單",
         "description": "Field Label for options"
     },
 
