@@ -66,8 +66,19 @@ var sites = [
     "gjoyz.com",
     "buzz01.com",
     "orange01.org",
-    "circle01.com"
-
+    "circle01.com",
+    "qianqu.cc",
+    "mango01.com",
+    "clickme.net",
+    "ezvivi2.com",
+    "funnies.online",
+    "laughbombclub.com",
+    "thefundaily.com",
+    "getfunfun.com",
+    "myfbshare.net",
+    "push01.net",
+    "letu.life",
+    "novelfeed.com",
 ];
 
 module.exports = sites;
