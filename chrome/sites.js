@@ -51,7 +51,6 @@ var sites = [
     "ck101.com",
     "spicemami.com",
     "picallies.com",
-    "buzzorange.com",
     "guudo.cn",
     "fanli7.net",
     "bubuko.com",
