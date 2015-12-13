@@ -78,6 +78,7 @@ var sites = [
     "push01.net",
     "letu.life",
     "novelfeed.com",
+    "enews.com.tw",
 ];
 
 module.exports = sites;
