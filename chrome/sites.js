@@ -80,6 +80,7 @@ var sites = [
     "novelfeed.com",
     "enews.com.tw",
     "watchinese.com",
+    "life.tw",
 ];
 
 module.exports = sites;
