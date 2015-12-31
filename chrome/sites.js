@@ -5,6 +5,7 @@
 
 var sites = [
     "life.com.tw",
+    "life.tw",
     "yourhope.info",
     "mama.tw",
     "teepr.com",
