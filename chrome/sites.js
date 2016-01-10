@@ -4,7 +4,7 @@
  */
 
 var sites = [
-    "life.com.tw",
+    "life.com.tw", // life.tw mirror site
     "yourhope.info",
     "mama.tw",
     "teepr.com",
@@ -101,7 +101,6 @@ var sites = [
     "hotnews.hk",
     "hottopics2know.com", // video share zombie-subdomains
     "joynshare.com",
-    "life.com.tw", // life.tw mirror site
     "lnhongxin.com", // tw.anyelse.com mirror site
     "post4share.com", // video share zombie-subdomains
     "pttbook.cc",
