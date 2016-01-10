@@ -94,7 +94,6 @@ var sites = [
     "share001.net",
     "share2fb.com",
     "share2you.hk",
-    "shareba.com",
     "shareba.com", // Most content are invalid or not verified
     "shareonion.com",
     "sharingthis.hk", //video share zombie-subdomains
