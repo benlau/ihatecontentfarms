@@ -81,6 +81,7 @@ var sites = [
     "enews.com.tw",
     "watchinese.com",
     "life.tw",
+    "life.cx", // This domain will redirect to life.tw
 ];
 
 module.exports = sites;
