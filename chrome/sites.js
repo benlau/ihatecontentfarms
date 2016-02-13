@@ -82,6 +82,36 @@ var sites = [
     "watchinese.com",
     "life.tw",
     "life.cx", // This domain will redirect to life.tw
+    "a-gui.com",
+    "apple01.net",
+    "asia01.club",
+    "axn2000.blogspot.*",
+    "bunnygo.net",
+    "buzznews.news",
+    "ccolorsky.blogspot.com",
+    "contw.com",
+    "daleba.net",
+    "happies.news",
+    "happyeverydaymovie.com",
+    "hk.maheshbhusal.com.np",
+    "howfunny.org",
+    "icovideos.com",
+    "ideapit.com",
+    "immediates.net",
+    "kan.world",
+    "medialnk.com",
+    "mili010.com",
+    "mili010.net",
+    "ml.design-fabrica.com", // Whole HK
+    "qilook.com",
+    "qiqu.news",
+    "share2fb.net",
+    "ttshow.tw",
+    "tw.jdkartsports.nl/", // Whole HK
+    "vdoobv.com",
+    "wonder4.co",
+    "ww.apple01.net",
+    "share001.com"
 ];
 
 module.exports = sites;
