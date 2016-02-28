@@ -112,7 +112,8 @@ var sites = [
     "youthwant.com.tw",
     "youthwant.ufc.com.tw",
     "youthwant.xnnow.com",
-    "hehuancui.com" // buzz01
+    "hehuancui.com", // buzz01
+    "video-lab.net" //Whole HK
 ];
 
 module.exports = sites;
