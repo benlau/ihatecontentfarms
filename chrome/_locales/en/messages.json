@@ -33,7 +33,7 @@
     // Options.html
 
     "systemBlacklist": {
-        "message": "System Backlist",
+        "message": "System Blacklist",
         "description": "Field Label for options"
     },
 
@@ -43,7 +43,7 @@
     },
 
     "userBlacklist": {
-        "message": "User Backlist",
+        "message": "User Blacklist",
         "description": "Field Label for options"
     },
 
