@@ -98,6 +98,7 @@ var sites = [
     "superfun-e.com",
     "teepr.com",
     "thefundaily.com",
+    "thenewslens.com",
     "ttshow.tw",
     "tw.anyelse.com",
     "tw.jdkartsports.nl/", // Whole HK
