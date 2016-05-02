@@ -2,6 +2,7 @@ var parse = require('csv-parse/lib/sync');
 var fs = require("fs");
 var unquote = require('unquote');
 var url = require("url");
+var _ = require("underscore");
 
 if (process.argv.length !== 3) {
     console.log("node process-form input.csv");
@@ -11,7 +12,7 @@ if (process.argv.length !== 3) {
 var content = fs.readFileSync(process.argv[2]);
 var csv = parse(content,({delimiter: ","}));
 
-csv = csv.filter((value) => {
+var result = csv.filter((value) => {
     return value[5] === "ACCEPT";
 }).map((obj) => {
     var u = url.parse(obj[1], true);
@@ -23,7 +24,13 @@ csv = csv.filter((value) => {
 
     hostname = hostname.toLowerCase();
 
+    if (hostname.indexOf("www.") === 0) {
+        hostname = hostname.substring(4,hostname.length);
+    }
+
     return hostname;
 }).sort();
 
-console.log(JSON.stringify(csv, null, 4));
+result = _.unique(result);
+
+console.log(JSON.stringify(result, null, 4));
