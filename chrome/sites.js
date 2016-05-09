@@ -114,7 +114,9 @@ var sites = [
     "youthwant.xnnow.com",
     "hehuancui.com", // buzz01
     "qzapp.net",
-    "classicofloves.com"
+    "classicofloves.com",
+    "cocotw.net",
+    "post01.com"
 ];
 
 module.exports = sites;
