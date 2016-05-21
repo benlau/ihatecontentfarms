@@ -149,7 +149,14 @@ var sites = [
     "youthwant.ufc.com.tw",
     "youthwant.xnnow.com",
     "zhoucuimei.cc",
-    "zhulinlin.net"
+    "zhulinlin.net",
+    "dailyfun.cc",
+    "dayhot.news",
+    "dayspot.net",
+    "eryunews.com",
+    "fun01.net",
+    "ipetgroup.com",
+    "yourbabb.com"
 ];
 
 module.exports = sites;
