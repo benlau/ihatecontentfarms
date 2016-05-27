@@ -156,7 +156,9 @@ var sites = [
     "eryunews.com",
     "fun01.net",
     "ipetgroup.com",
-    "yourbabb.com"
+    "yourbabb.com",
+    "beefun01.com",
+    "chunew.com"
 ];
 
 module.exports = sites;
