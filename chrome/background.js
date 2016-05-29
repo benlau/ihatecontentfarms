@@ -14,7 +14,7 @@ function block(url) {
         ret = false,
         domain = hostname(url),
         key = "tmpWhitelist";
-    
+
     filter.appendBlacklist(sites);
     filter.appendBlacklist(ListFormatter.parse(LocalStorageStore.userBlacklist));
 
@@ -25,15 +25,15 @@ function block(url) {
         try {
             Whitelist = JSON.parse(localStorage.getItem(key) || "");
         } catch (e) {
-            Whitelist = {};            
+            Whitelist = {};
         }
-        
+
         if (Whitelist.hasOwnProperty(domain)) {
             var timestamp = (new Date()).getTime();
             var threshold = 10 * 60 * 1000; // Ten minutes
             if (timestamp - Whitelist[domain] > threshold) {
                 delete Whitelist[domain];
-                
+
                 try {
                     localStorage.setItem(key,JSON.stringify(Whitelist));
                 } catch (err) {
@@ -41,7 +41,7 @@ function block(url) {
                 }
             }
         }
-        
+
         if (!Whitelist.hasOwnProperty(domain)) {
             ret = true;
         }
@@ -51,19 +51,15 @@ function block(url) {
 
 function handle(tab) {
     if (block(tab.url)) {
-        chrome.tabs.update(tab.id,{ url: "stop.html?to=" + encodeURIComponent(tab.url)});    
+        chrome.tabs.update(tab.id,{ url: "stop.html?to=" + encodeURIComponent(tab.url)});
     }
 }
 
 chrome.webRequest.onBeforeRequest.addListener(function(info) {
     var cancel = false;
-//        console.log(info.url,"isWebRequestFilterBlocked",LocalStorageStore.isWebRequestFilterBlocked);
 
     if (!LocalStorageStore.isWebRequestFilterBlocked ) {
-        var cancel = block(info.url);
-//        if (cancel) {
-//            console.log("Block",info.url);
-//        }
+        cancel = block(info.url);
     }
 
     return {cancel: cancel};
@@ -74,9 +70,9 @@ chrome.webRequest.onBeforeRequest.addListener(function(info) {
 );
 
 chrome.tabs.onCreated.addListener(function(tab) {
-    handle(tab); 
+    handle(tab);
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    handle(tab); 
+    handle(tab);
 });

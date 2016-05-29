@@ -32,6 +32,12 @@
         "description":"Continue button text"
     },
 
+    "contNoAdsBtn":{
+        "message":"繼續 (無廣告)",
+        "description":"Continue button text"
+    },
+
+
     // Options.html
 
     "systemBlacklist": {
