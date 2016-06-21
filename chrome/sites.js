@@ -159,6 +159,13 @@ var sites = [
     "youthwant.xnnow.com",
     "zhoucuimei.cc",
     "zhulinlin.net",
+    "coco01.net",
+    "guowenme.cc",
+    "ireaded.com",
+    "ispot.news",
+    "read01.com",
+    "whatfunny.org",
+    "ymiit.com"
 ];
 
 module.exports = sites;
