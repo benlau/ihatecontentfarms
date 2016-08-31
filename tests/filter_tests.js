@@ -54,6 +54,26 @@ describe("Filter", () => {
         assert(!filter.match("contentfarm.blogspotsite.com"));
     });
 
+    it("match with http prefix", () => {
+        var patterns = [ "http://contentfarm.com", "https://contentfarm.com",
+                        "http:///contentfarm.com"];
+
+        for (var i in patterns) {
+
+            var filter = new Filter();
+            filter.appendBlacklist([patterns[i]]);
+
+            assert(filter.match("contentfarm.com"));
+            assert(filter.match("www.contentfarm.com"));
+            assert(filter.match("www2.en.contentfarm.com"));
+            assert(filter.match("www-2.en.contentfarm.com"));
+            assert(!filter.match("xcontentfarm.com"));
+            assert(!filter.match("facebook.com"));
+            assert(!filter.match("contentfarm2.com"));
+
+        }
+    });
+
     it("sites duplication checking", () => {
         var map = {};
         for (var i in sites) {

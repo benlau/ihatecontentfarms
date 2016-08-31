@@ -50,7 +50,12 @@ export default class Filter {
     }
 
     createRegExp(pattern) {
-        var replaced = pattern.replace(/\./g,"\\.").replace(/\*/g,".*");
+        var replaced;
+
+        // Take out http[s]:// prefix
+        replaced = pattern.replace(/^http[s]*:*\/*/,"");
+
+        replaced = replaced.replace(/\./g,"\\.").replace(/\*/g,".*");
         var rx = new RegExp("^[a-z0-9-\.]*\\.+" + replaced + "$|^" + replaced + "$");
 
         return rx;
