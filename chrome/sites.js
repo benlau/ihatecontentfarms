@@ -165,7 +165,8 @@ var sites = [
     "ispot.news",
     "read01.com",
     "whatfunny.org",
-    "ymiit.com"
+    "ymiit.com",
+    "fullyu.com"
 ];
 
 module.exports = sites;
