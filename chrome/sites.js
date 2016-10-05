@@ -117,7 +117,6 @@ var sites = [
     "mimi186.com",
     "ml.design-fabrica.com", // Whole HK
     "ml.yubhar.com",
-    "mnya.idv.tw",
     "money83.com",
     "moneyaaa.com",
     "myfbshare.net",
