@@ -98,6 +98,7 @@ var sites = [
     "juksy.com",
     "kan.world",
     "kikinote.net",
+    "kknews.cc",
     "kuso01.tv",
     "laughbombclub.com",
     "letu.life",
