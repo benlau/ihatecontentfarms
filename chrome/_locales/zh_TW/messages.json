@@ -37,9 +37,6 @@
         "description":"Continue button text"
     },
 
-
-    // Options.html
-
     "systemBlacklist": {
         "message": "系統黑名單",
         "description": "Field Label for options"
