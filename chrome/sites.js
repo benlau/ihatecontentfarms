@@ -94,6 +94,7 @@ var sites = [
     "ipetgroup.com",
     "ireaded.com",
     "ispot.news",
+    "izhentoo.cc",
     "jimmyfans.com",
     "juksy.com",
     "kan.world",
