@@ -221,7 +221,8 @@ var sites = [
     "onnewlife.com",
     "thehealthdaily.org",
     "tipelse.com",
-    "zhentoo.net"
+    "zhentoo.net",
+    "qooah.com"
 ];
 
 module.exports = sites;
