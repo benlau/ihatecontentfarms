@@ -1,7 +1,10 @@
 language : node_js 
+node_js:
+    - "7"
 script:
     - npm install .
     - npm install -G gulp
+    - npm list --depth=0
     - gulp mocha:build
     - mocha --require source-map-support/register build/tests/main.js
     - gulp chrome
