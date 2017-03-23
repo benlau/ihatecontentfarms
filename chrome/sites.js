@@ -223,6 +223,8 @@ var sites = [
     "zhentoo.net",
     "zhoucuimei.cc",
     "zhulinlin.net",
+
+    "fashionwaltz.com",
 ];
 
 module.exports = sites;
