@@ -38,7 +38,6 @@ var sites = [
     "chunew.com",
     "cibeiwen.com",
     "circle01.com",
-    "ck101.com",
     "classicofloves.com",
     "clickme.net",
     "cmoney.tw",
@@ -223,6 +222,24 @@ var sites = [
     "zhentoo.net",
     "zhoucuimei.cc",
     "zhulinlin.net",
+    "8im.me",
+    "8md.me",
+    "buzzbooklet.com",
+    "dungwa.com",
+    "gjoyz.co",
+    "hkappleweekly.com",
+    "hktimes.org/",
+    "imama.tw",
+    "interestingpo.com",
+    "meishuile.com",
+    "nowlooker.com",
+    "ourstarsky.com",
+    "popdaily.com.tw",
+    "post01.net",
+    "readhouse.net",
+    "thehealther.com",
+    "topnews8.com",
+    "twtimes.org"
 ];
 
 module.exports = sites;
