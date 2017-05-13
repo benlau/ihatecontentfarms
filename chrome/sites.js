@@ -239,7 +239,20 @@ var sites = [
     "readhouse.net",
     "thehealther.com",
     "topnews8.com",
-    "twtimes.org"
+    "twtimes.org",
+    "bc3ts.com",
+    "cacanews.com",
+    "goodlifeyou.bumbnews.com",
+    "gooread.com",
+    "gyfunnews.com",
+    "happytify.cc",
+    "lookforward.cc ",
+    "lovelifes.net",
+    "moretify.com",
+    "myfunnews.com",
+    "pixpo.net",
+    "please.news",
+    "uuread.cc"
 ];
 
 module.exports = sites;
