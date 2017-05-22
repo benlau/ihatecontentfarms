@@ -194,7 +194,6 @@ var sites = [
     "vdoobv.com",
     "video-lab.net", //Whole HK,
     "viralane.com",
-    "watchinese.com",
     "whatfunny.org",
     "wholehk.com",
     "whyhow.online",
