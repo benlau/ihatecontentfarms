@@ -23,10 +23,19 @@
 
 [Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
 
+Build Instructions
+=================
+
+```
+   gulp chrome
+   gulp chrome:bundle
+```
+   
 
 Unit Tests
 ----------
 
+```
     gulp mocha:build
     mocha --require source-map-support/register build/tests/main.js
-
+```
