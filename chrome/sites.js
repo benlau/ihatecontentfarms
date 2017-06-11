@@ -248,7 +248,8 @@ var sites = [
     "myfunnews.com",
     "pixpo.net",
     "please.news",
-    "uuread.cc"
+    "uuread.cc",
+    "lookforward.cc"
 ];
 
 module.exports = sites;
