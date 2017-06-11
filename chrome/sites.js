@@ -242,7 +242,6 @@ var sites = [
     "gooread.com",
     "gyfunnews.com",
     "happytify.cc",
-    "lookforward.cc ",
     "lovelifes.net",
     "moretify.com",
     "myfunnews.com",

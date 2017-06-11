@@ -83,8 +83,15 @@ describe("Filter", () => {
             }
             map[site] = true;
         }
-
     });
 
+    it("sites format checking", () => {
+        for (var i in sites) {
+            var site = sites[i];
+            if (site.indexOf(" ") >= 0){
+                throw new Error(site + " contains extra space.");
+            }
+        }
+    });
 
 });
