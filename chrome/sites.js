@@ -248,7 +248,8 @@ var sites = [
     "pixpo.net",
     "please.news",
     "uuread.cc",
-    "lookforward.cc"
+    "lookforward.cc",
+    "orgs.one"
 ];
 
 module.exports = sites;
