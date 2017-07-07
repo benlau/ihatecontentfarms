@@ -249,7 +249,8 @@ var sites = [
     "please.news",
     "uuread.cc",
     "lookforward.cc",
-    "orgs.one"
+    "orgs.one",
+    "read-life.com"
 ];
 
 module.exports = sites;
