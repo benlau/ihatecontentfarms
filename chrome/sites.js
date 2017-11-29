@@ -230,7 +230,6 @@ var sites = [
     "meishuile.com",
     "nowlooker.com",
     "ourstarsky.com",
-    "popdaily.com.tw",
     "post01.net",
     "readhouse.net",
     "thehealther.com",
@@ -249,7 +248,23 @@ var sites = [
     "please.news",
     "uuread.cc",
     "lookforward.cc",
-    "orgs.one"
+    "orgs.one",
+    "ballgametime.com",
+    "bml.orgs.one",
+    "buzzer123.com",
+    "chinesealliance.net",
+    "crazy-photoshop.com",
+    "ebcbuzz.com",
+    "flxdaily.com",
+    "gleenow.com",
+    "goodtimes.my/",
+    "happytify.net",
+    "health1.tw",
+    "jiankanghou.com",
+    "lifeyet.com",
+    "loveshare.online",
+    "pineapple99.com",
+    "ps.loveshares.cc"
 ];
 
 module.exports = sites;
