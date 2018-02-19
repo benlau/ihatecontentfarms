@@ -7,7 +7,8 @@ var gulp = require('gulp'),
     del = require('del'),
     _ = require('lodash'),
     path = require('path'),
-    zip = require('gulp-zip');
+    zip = require('gulp-zip'),
+    runSequence = require('run-sequence');
 
 var chromeBuildFolder = "./build/chrome";
 
@@ -52,11 +53,17 @@ function chromeWebpack(filename,callback) {
     });
 }
 
+gulp.task('default', function(callback) {
+    runSequence ("clean",
+                 "chrome",
+                 callback);
+});
+
 gulp.task('clean', del.bind(
   null, ['build/*'], {dot: true}
 ));
 
-gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop"]);
+gulp.task('chrome',["chrome:assets","chrome:background","chrome:stop","chrome:options"]);
 
 gulp.task("chrome:assets", function() {
     var assets = [
@@ -78,6 +85,10 @@ gulp.task("chrome:background", function(callback) {
 
 gulp.task("chrome:stop", function(callback) {
     chromeWebpack("stop.js",callback);
+});
+
+gulp.task("chrome:options", function(callback) {
+    chromeWebpack("options.js",callback);
 });
 
 gulp.task("chrome:bundle", function() {

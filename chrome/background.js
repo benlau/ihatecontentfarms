@@ -1,5 +1,6 @@
 var sites = require("./sites"),
     Filter = require("cfblocker/Filter"),
+    ListFormatter = require("cfblocker/ListFormatter"),
     LocalStorageStore = require("cfblocker/LocalStorageStore");
 
 function hostname(url) {
@@ -12,33 +13,36 @@ function block(url) {
     var filter = new Filter(),
         ret = false,
         domain = hostname(url),
-        key = "tmpWhiteList";
-    
-    filter.appendBlackList(sites);
-        
+        key = "tmpWhitelist";
+
+    filter.appendBlacklist(sites);
+    filter.appendBlacklist(ListFormatter.parse(LocalStorageStore.userBlacklist));
+
+    filter.appendWhitelist(ListFormatter.parse(LocalStorageStore.userWhitelist));
+
     if (filter.match(domain)) {
-        var whiteList ;
+        var Whitelist ;
         try {
-            whiteList = JSON.parse(localStorage.getItem(key) || "");
+            Whitelist = JSON.parse(localStorage.getItem(key) || "");
         } catch (e) {
-            whiteList = {};            
+            Whitelist = {};
         }
-        
-        if (whiteList.hasOwnProperty(domain)) {
+
+        if (Whitelist.hasOwnProperty(domain)) {
             var timestamp = (new Date()).getTime();
             var threshold = 10 * 60 * 1000; // Ten minutes
-            if (timestamp - whiteList[domain] > threshold) {
-                delete whiteList[domain];
-                
+            if (timestamp - Whitelist[domain] > threshold) {
+                delete Whitelist[domain];
+
                 try {
-                    localStorage.setItem(key,JSON.stringify(whiteList));
+                    localStorage.setItem(key,JSON.stringify(Whitelist));
                 } catch (err) {
                     console.error(err);
                 }
             }
         }
-        
-        if (!whiteList.hasOwnProperty(domain)) {
+
+        if (!Whitelist.hasOwnProperty(domain)) {
             ret = true;
         }
     }
@@ -47,19 +51,15 @@ function block(url) {
 
 function handle(tab) {
     if (block(tab.url)) {
-        chrome.tabs.update(tab.id,{ url: "stop.html?to=" + encodeURIComponent(tab.url)});    
+        chrome.tabs.update(tab.id,{ url: "stop.html?to=" + encodeURIComponent(tab.url)});
     }
 }
 
 chrome.webRequest.onBeforeRequest.addListener(function(info) {
     var cancel = false;
-//        console.log(info.url,"isWebRequestFilterBlocked",LocalStorageStore.isWebRequestFilterBlocked);
 
     if (!LocalStorageStore.isWebRequestFilterBlocked ) {
-        var cancel = block(info.url);
-//        if (cancel) {
-//            console.log("Block",info.url);
-//        }
+        cancel = block(info.url);
     }
 
     return {cancel: cancel};
@@ -70,9 +70,9 @@ chrome.webRequest.onBeforeRequest.addListener(function(info) {
 );
 
 chrome.tabs.onCreated.addListener(function(tab) {
-    handle(tab); 
+    handle(tab);
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    handle(tab); 
+    handle(tab);
 });

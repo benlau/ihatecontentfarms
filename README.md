@@ -16,15 +16,26 @@
  1. 在打開內容農場時進行攔截
  
  2. 用戶可以選擇繼續，然後在10分鐘內不再對同一網址進行攔截
+ 
+ 3. 自定黑名單及白名單
 
 下載:
 
 [Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
 
+Build Instructions
+=================
+
+```
+   gulp chrome
+   gulp chrome:bundle
+```
+   
 
 Unit Tests
 ----------
 
+```
     gulp mocha:build
     mocha --require source-map-support/register build/tests/main.js
-
+```
