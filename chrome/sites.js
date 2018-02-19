@@ -268,7 +268,6 @@ var sites = [
     "qingpingshan.com",
     "wkgoto.com",
     "agri35.com",
-    "hitwendao.com",
     "itkeyword.com"
 ];
 
