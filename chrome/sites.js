@@ -268,7 +268,9 @@ var sites = [
     "qingpingshan.com",
     "wkgoto.com",
     "agri35.com",
-    "itkeyword.com"
+    "itkeyword.com",
+    "91r.net",
+    "zgxue.com"
 ];
 
 module.exports = sites;
