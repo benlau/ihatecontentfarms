@@ -264,7 +264,13 @@ var sites = [
     "lifeyet.com",
     "loveshare.online",
     "pineapple99.com",
-    "ps.loveshares.cc"
+    "ps.loveshares.cc",
+    "qingpingshan.com",
+    "wkgoto.com",
+    "agri35.com",
+    "itkeyword.com",
+    "91r.net",
+    "zgxue.com"
 ];
 
 module.exports = sites;
