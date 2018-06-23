@@ -23,6 +23,10 @@
 
 [Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
 
+舉報網址內容農場
+
+https://docs.google.com/forms/d/15PiDGSjDMKorGFkoFKr76kW7NI02eD4IWL-O_OlM1GA/viewform
+
 Build Instructions
 =================
 

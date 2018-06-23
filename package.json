@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "gulp mocha:build;mocha --require source-map-support/register build/tests/main.js"
+    "test": "gulp mocha:build;mocha --require source-map-support/register build/tests/main.js",
+   "gen-form-filters": "node ./scripts/gen-form-filters.js"
   },
   "repository": {
     "type": "git",
