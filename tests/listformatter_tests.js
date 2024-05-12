@@ -1,7 +1,6 @@
 
 import assert from "assert";
-import ListFormatter from "cfblocker/ListFormatter";
-import sites from "../chrome/sites";
+import ListFormatter from "../chrome/cfblocker/ListFormatter.js";
     
 describe("ListFormatter", () => {
     

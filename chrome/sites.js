@@ -4,7 +4,7 @@
    2. Don't sort the list. Maintainer will do it before next release.
  */
 
-var sites = [
+export const sites = [
     "163nvren.com",
     "360doc.com",
     "7jiu.com.hk",
@@ -272,5 +272,3 @@ var sites = [
     "91r.net",
     "zgxue.com"
 ];
-
-module.exports = sites;

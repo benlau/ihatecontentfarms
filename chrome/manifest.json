@@ -1,12 +1,16 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.4.6",
+  "version": "0.5.0",
   "description": "__MSG_appDesc__",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "background" : {
-  	"scripts" : ["background.js"]
+  	"service_worker" : "worker.js",
+    "type": "module"
   },
-  "permissions": [ "tabs" ,"webRequest", "webRequestBlocking" , "http://*/", "https://*/"],
+  "permissions": [ "tabs" , "declarativeNetRequest", "storage"],
+  "optional_host_permissions": [
+    "http://*/", "https://*/"
+  ],
   "default_locale": "en",
   "options_page": "options.html"
 }

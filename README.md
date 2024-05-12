@@ -1,6 +1,15 @@
 # Content Farm Blocker
 ======================
 
+# 0.5版本 (WIP)
+
+- 因為Chrome將不支援V2 Manifest，所以將Content Farm Blocker升級到V3 Manifest。
+- V3 Manifest並不支援webRequestBlock，改用了declarativeNetRequest
+- 因此權限要求改變，你會發現Chrome會通知你權限被改變，這是正常的現象。
+- 要是你選擇繼續使用Content Farm Blocker，請不要移險，感謝你的支持。
+ 
+# 簡介
+
 你今天震驚了嗎？有否為大量誇張失實的標題文章湧進日常生活而感到厭感？
 
 即使告訢朋友不要再轉載有關文章，結果還是不會消失，最後只能進行消極的抵抗 － 不點擊，不讓自己為對方的廣告收益帶來貢獻。
@@ -23,23 +32,10 @@
 
 [Content Farm Blocker - Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/opjaibbmmpldcncnbbglondckfnokfpm?hl=zh-TW)
 
-舉報網址內容農場
-
-https://docs.google.com/forms/d/15PiDGSjDMKorGFkoFKr76kW7NI02eD4IWL-O_OlM1GA/viewform
-
-Build Instructions
-=================
-
-```
-   gulp chrome
-   gulp chrome:bundle
-```
-   
 
 Unit Tests
 ----------
 
 ```
-    gulp mocha:build
-    mocha --require source-map-support/register build/tests/main.js
+npm run test
 ```

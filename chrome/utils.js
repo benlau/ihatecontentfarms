@@ -1,22 +1,16 @@
 
-function tr(selector,message) {
+export function tr(selector,message) {
     $(selector).text(chrome.i18n.getMessage(message));
 }
 
-function hostname(url) {
+export function hostname(url) {
     var parser = document.createElement("a");
     parser.href = url;
     return parser.hostname;
 }
 
-function trFromTable(table) {
+export function trFromTable(table) {
     for (var i in table) {
         $(i).text(chrome.i18n.getMessage(table[i]));
     }
-}
-
-module.exports = {
-    tr: tr,
-    hostname: hostname,
-    trFromTable: trFromTable
 }

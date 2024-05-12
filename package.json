@@ -2,13 +2,15 @@
   "name": "contentfarmblocker",
   "version": "0.1.5",
   "description": "To prevent click content farm mistakenly",
-  "main": "gulpfile.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "gulp mocha:build;mocha --require source-map-support/register build/tests/main.js",
-   "gen-form-filters": "node ./scripts/gen-form-filters.js"
+    "test": "mocha -r jsdom-global/register tests/*_tests.js",
+    "gen-form-filters": "node ./scripts/gen-form-filters.js",
+    "lint": "eslint . --ext .js --ext .ts",
+    "lint:fix": "eslint . --ext .ts --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -37,16 +39,16 @@
     "gulp-util": "3.0.7",
     "gulp-zip": "3.0.2",
     "intl-messageformat": "1.2.0",
-    "jsdom": "6.5.1",
+    "jsdom": "^23.2.0",
+    "jsdom-global": "^3.0.2",
     "lodash": "3.10.1",
     "merge": "1.2.0",
-    "mocha": "2.3.3",
+    "mocha": "^10.2.0",
     "mocha-jsdom": "1.0.0",
     "parse-url": "1.0.0",
     "path": "0.12.7",
     "run-sequence": "1.1.4",
     "source-map-support": "0.3.2",
     "webpack": "1.12.2"
-  },
-  "devDependencies": {}
+  }
 }

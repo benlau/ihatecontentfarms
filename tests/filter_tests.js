@@ -1,7 +1,7 @@
 
 import assert from "assert";
-import Filter from "cfblocker/Filter";
-import sites from "../chrome/sites";
+import {Filter} from "../chrome/cfblocker/Filter.js";
+import {sites} from "../chrome/sites.js";
 
 describe("Filter", () => {
 

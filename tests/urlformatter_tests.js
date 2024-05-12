@@ -1,7 +1,6 @@
 
 import assert from "assert";
-import UrlFormatter from "cfblocker/UrlFormatter";
-import sites from "../chrome/sites";
+import {UrlFormatter} from "../chrome/cfblocker/UrlFormatter.js";
 
 describe("UrlFormatter", () => {
 
