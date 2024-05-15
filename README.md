@@ -1,12 +1,15 @@
 # Content Farm Blocker
 ======================
 
-# 0.5版本 (WIP)
+# 0.5版本
 
 - 因為Chrome將不支援V2 Manifest，所以將Content Farm Blocker升級到V3 Manifest。
 - V3 Manifest並不支援webRequestBlock，改用了declarativeNetRequest
 - 因此權限要求改變，你會發現Chrome會通知你權限被改變，這是正常的現象。
 - 要是你選擇繼續使用Content Farm Blocker，請不要移險，感謝你的支持。
+
+關於v0.5.0的用戶黑名單消失的問題 #48
+https://github.com/benlau/ihatecontentfarms/issues/48
  
 # 簡介
 
